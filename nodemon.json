@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "node_modules/**",
+    "**/node_modules/**",
+    "**/assets/***",
+    "**/pages/***"
+  ],
+  "ext": "js json less hbs"
+}
