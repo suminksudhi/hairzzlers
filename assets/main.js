@@ -43,7 +43,7 @@ var requireConfig = {
         dependency: 'dependency',
         library: 'libs',
         'angular-ui-select': 'js/plugins/drifter/drifterselect', //@experimental for select2
-
+        'async': 'lib/requirejs-plugins/src/async',
         /** custom plugins **/
         portlet: 'js/portlet', //used for portlet animation and customization basically they are custom panels
     },

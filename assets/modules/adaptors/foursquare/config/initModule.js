@@ -8,9 +8,7 @@
             .config(['$httpProvider','$stateProvider',function($httpProvider,$stateProvider){
                 $httpProvider.defaults.timeout = 500;
                 $stateProvider
-                    .state('adaptor.foursquare', {
-                        abstract:true
-                    })
+                    .state('adaptor.foursquare', {})
                     .state('adaptor.foursquare.search', {
                         templateUrl: 'partials/adaptors/home.html',
                         url: "/search"

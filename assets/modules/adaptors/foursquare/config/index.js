@@ -5,6 +5,7 @@
     define([
         'modules/adaptors/foursquare/controllers/foursquare.ctrl',
         'modules/adaptors/foursquare/providers/factory/foursquareFactory',
-        'modules/adaptors/foursquare/directives/fsConfig'
+        'modules/adaptors/foursquare/directives/fsConfig',
+        'modules/adaptors/foursquare/directives/map'
     ], function() {'use strict';});
 }());
