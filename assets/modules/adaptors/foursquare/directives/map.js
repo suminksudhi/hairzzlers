@@ -11,10 +11,10 @@
             warn = console.warn;
             info = console.info;
         }else{
-            logger = debug('social:foursquare:directives:naFsConfig:log');
-            info = debug('social:foursquare:directives:naFsConfig:info');
-            tracer = debug('social:foursquare:directives:naFsConfig:trace');
-            warn = debug('social:foursquare:directives:naFsConfig:warn');
+            logger = debug('social:foursquare:directives:map:log');
+            info = debug('social:foursquare:directives:map:info');
+            tracer = debug('social:foursquare:directives:map:trace');
+            warn = debug('social:foursquare:directives:map:warn');
             tracer.log = console.trace ? console.trace.bind(console) : console.log.bind(console);
             warn.log = console.warn.bind(console);
             info.log = console.info.bind(console);
@@ -27,7 +27,7 @@
                 scope: {
                     width: '@width',
                     height: '@height',
-                    cssclass: '@naFsConfigClass',
+                    cssclass: '@mapClass',
                     enablePanel: '@naFsShowPanel',
                     checkConfig: '@naFsCheckConfig'
                 },
@@ -37,7 +37,7 @@
                 },
                 link: function(scope, element, attrs) {
 
-                    console.log('map')
+                    console.log('map');
 
                     //listen to call back for map api
                     $window.initMap = function(){

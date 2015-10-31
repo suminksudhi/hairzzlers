@@ -8,10 +8,15 @@
             .config(['$httpProvider','$stateProvider',function($httpProvider,$stateProvider){
                 $httpProvider.defaults.timeout = 500;
                 $stateProvider
-                    .state('adaptor.foursquare', {})
+                    .state('adaptor.foursquare', {
+                        abstract:true
+                    })
                     .state('adaptor.foursquare.search', {
                         templateUrl: 'partials/adaptors/home.html',
-                        url: "/search"
+                        url: "/search",
+                        controller:['$scope',function($scope){
+                            console.log($scope);
+                        }]
                     })
             }])
             .run(['$window','$rootScope',function($window, $rootScope) {

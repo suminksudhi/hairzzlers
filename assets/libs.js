@@ -8,8 +8,7 @@ define([
     'angularUIRoute',
     'placeholders',
     'angularMoment',
-    'angularLocalForage',
-    'angularX2JS'
+    'angularLocalForage'
 ], function (angular) {
     'use strict';
     return angular.module('Hairzzlers.libs',
@@ -18,8 +17,7 @@ define([
             'ngSanitize',
             'placeholders',
             'angularMoment',
-            'LocalForageModule',
-            'cb.x2js']).config(['$localForageProvider', function ($localForageProvider) {
+            'LocalForageModule']).config(['$localForageProvider', function ($localForageProvider) {
             /**
              * localforage configuartiion for leverage browser storage
              */

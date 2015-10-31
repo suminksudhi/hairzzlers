@@ -23,5 +23,10 @@ Now run the app using
 
 `node bin/hairzzlerServer`
 
-the defaults to port 3000 but you caould change port using -p [port_no] option in command line
+the defaults to port 3000 but you could change port using -p [port_no] option in command line
+
+Demo
+========
+
+Please do visit [hairzzlers!](http://hairzzlers.braindrifters.com)  for a demo
 

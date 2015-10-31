@@ -3,7 +3,7 @@
  */
 ;(function () {
     define(['angular',
-        'modules/adaptors/foursquare/config/initModule'
+        'modules/adaptors/foursquare/config/index'
     ], function (angular) {
         'use strict';
         return angular.module('Hairzzlers.Adaptor',[
@@ -15,15 +15,8 @@
                 $stateProvider
                     .state('adaptor', {
                         url: '/adaptor',
-                        templateUrl: '/partials/adaptors/layouts/adaptors.html',
-                        controller: ['$scope','adaptorList',function($scope,adaptorList){
-                            $scope.adaptorList = adaptorList
-                        }],
-                        resolve: {
-                            adaptorList:['adaptor',function(adaptor){
-                                return adaptor.getAdaptorList();
-                            }]
-                        }
+                        bstract:true,
+                        templateUrl: '/partials/adaptors/layouts/adaptors.html'
                     })
                     .state('adaptor.config', {
                         url: '/config',

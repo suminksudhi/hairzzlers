@@ -21,7 +21,6 @@ var requireConfig = {
         angularMoment: "libs/angular-moment/index", //used for momentjs ops on angular
         angularLocalForage: "libs/angular-localforage/dist/angular-localForage.min", //used for web database ops
         angularSwitch: "libs/angular-switch/dist/switch.min", //for swicth
-        angularX2JS: "libs/angular-x2js/dist/x2js.min",
 
         jquery: 'libs/jquery/dist/jquery.min', //jquery based operations
         jqueryUI: 'libs/jquery-ui/jquery-ui.min', //jquery based operations
@@ -30,7 +29,6 @@ var requireConfig = {
          * some nice utilities
          */
         moment: "libs/moment/index", // for date ops in UI end
-        X2JS: "libs/x2js/xml2json.min", // xml json convertor
         localforage: 'libs/localforage/dist/localforage.min', //for db ops in web databses follows a fallback mechanism
         Modernizr: 'js/plugins/modernizr.custom', //helps to detect html5 and css3 features native support for a browser
 
@@ -59,7 +57,6 @@ var requireConfig = {
         'angularSanitize': {deps: ['angular']},
         'angularLocalForage': {deps: ['angular', 'localforage']},
         'angularMoment': {deps: ['angular', 'moment']},
-        'angularX2JS': {deps: ['angular', 'X2JS']},
         'angular-ui-select': {deps: ['angular']},
         'initapp': {deps: ['jquery']},
         'app': {deps: ['jquery']},

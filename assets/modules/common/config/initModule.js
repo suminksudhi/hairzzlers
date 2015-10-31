@@ -13,7 +13,7 @@
         return angular.module('Hairzzlers.Common', [])
             .config([ 'appConfig','$locationProvider','$logProvider', '$httpProvider','$urlRouterProvider','$stateProvider','$localForageProvider','toastrConfig',
                 function (appConfig,$locationProvider,$logProvider, $httpProvider, $urlRouterProvider,$stateProvider,$localForageProvider,toastrConfig) {
-                $urlRouterProvider.otherwise("/search");
+                $urlRouterProvider.otherwise("/adaptor/search");
                 $stateProvider
                     .state('common', {
                         templateUrl: 'partials/index.html'

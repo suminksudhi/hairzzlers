@@ -14,7 +14,7 @@
   "analyze": true,
   "license": "MIT",
   "node-main": "./bin/hairzzlerServer",
-  "main": "bin/adminServer",
+  "main": "./bin/hairzzlerServer",
   "bin": {
     "main": "./bin/hairzzlerServer"
   },
